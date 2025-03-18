@@ -1,1 +1,39 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter", sans-serif;
+  --accent-font: "PressStart2P", sans-serif;
+  --main-text-size: 18px;
+  --common-line-height: 21px;
+  --stretch-container-width: clamp(375px, 100vw, 700px);
+  --header-title-size: clamp(49px, 7.3463vh, 65px);
+  --header-subtitle-size: clamp(14px, 2.3958vh ,23px);
+  --post-title-weight: 700;
+  --post-text-weight: 400;
+  --text-modal-window: 14px;
+  --btn-text-size: 14px;
+  --label-text-size: 14px;
+  --label-stroke-color: rgba(255, 255, 255, 0.5);
+  --text-color: #000;
+  --bg-img-mobile: url(../images/background.png);
+  --bg-img: url(../images/background-bg.png);
+  --bg-color: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 2px,
+      rgb(0, 0, 0, 0) 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0, 0, 0, 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --page-bg-color: #fff;
+  --picture: url(../images/image.png);
+  --post-border: 2px solid;
+  --border-color: #000;
+  --border-btn-color: #000;
+  --post-bg-color: #fff;
+  --btn-shadow-color: rgba(0,0,0);
+  --btn-inside-color: #fff;
+  --btn-animation-color: #000;
+  --btn-save-inline-size: clamp(306px, 91.3432vw, 335px);
+  --contour-color: #000;
+  --animation-fill-color: #FF0000;
+  --animation-fill-color-hover: #000;
+}
