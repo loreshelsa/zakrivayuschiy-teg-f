@@ -33,8 +33,7 @@
   flex-direction: column;
   background: var(--page-bg-color);
   padding: 0;
-  background: var(--bg-color-gradient);
-  background-image: var(--bg-img);
+  background-image: var(--bg-color-gradient), var(--bg-img);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -354,7 +353,7 @@
 
 @media (width <= 376px) {
   .page {
-    background-image: var(--bg-img-mobile);
+    background-image: var(--bg-img-mobile), var(--bg-color-gradient);
   }
 
   .header__subtitle {
