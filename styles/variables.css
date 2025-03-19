@@ -16,7 +16,7 @@
   --text-color: #000;
   --bg-img-mobile: url(../images/background.png);
   --bg-img: url(../images/background-bg.png);
-  --bg-color: repeating-linear-gradient(
+  --bg-color-gradient: repeating-linear-gradient(
       90deg,
       #d3d3d3 0 2px,
       rgb(0, 0, 0, 0) 2px 4px
