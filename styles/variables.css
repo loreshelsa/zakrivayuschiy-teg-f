@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: "Inter", sans-serif;
-  --accent-font: "PressStart2P", sans-serif;
+  --main-font: "Inter", Arial, sans-serif;
+  --accent-font: "PressStart2P", Arial, sans-serif;
   --main-text-size: 18px;
   --common-line-height: 21px;
   --stretch-container-width: clamp(375px, 100vw, 700px);
@@ -33,6 +33,8 @@
   --btn-inside-color: #fff;
   --btn-animation-color: #000;
   --btn-save-inline-size: clamp(306px, 91.3432vw, 335px);
+  --btn-save-border-color: #000;
+  --btn-save-color: #fff;
   --contour-color: #000;
   --animation-fill-color: #FF0000;
   --animation-fill-color-hover: #000;

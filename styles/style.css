@@ -10,7 +10,7 @@
 
 */
 
-@supports (font-variation-settings: 400) {
+@supports (font-variation-settings: normal) {
   .page {
     font-family: var(--main-font);
   }
@@ -89,6 +89,7 @@
   font-family: var(--main-font);
   font-weight: var(--post-title-weight);
   font-size: var(--main-text-size);
+  font-variation-settings: "wght" 850, "wdth" 100;
 }
 
 .post__img {
@@ -154,6 +155,8 @@
   font-weight: var(--post-text-weight);
   font-size: var(--main-text-size);
   line-height: var(--common-line-height);
+  font-variation-settings: "wght" 500, "wdth" 10%;
+
 }
 
 .post__buttons {
@@ -295,10 +298,10 @@
   margin-inline: auto;
   margin-block-start: 50px;
   margin-block-end: 100px;
-  border: 2px solid #000;
+  border: 2px solid var(--btn-save-border-color);
   font-family: var(--accent-font);
   font-size: var(--btn-text-size);
-  background-color: #fff;
+  background-color: var(--btn-save-color);
 }
 
 .save-icon {
@@ -367,6 +370,7 @@
     align-items: center;
     gap: 8px;
     height: 84px;
+    width: 309px;
   }
 
   .dialog[open] {
