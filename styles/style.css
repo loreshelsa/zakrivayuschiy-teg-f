@@ -15,7 +15,6 @@
     font-family: var(--main-font);
     font-weight: 400 785;
     font-stretch: 85% 125%;
-    font-variation-settings: "wght" 300;
   }
 }
 
@@ -33,7 +32,7 @@
   align-items: center;
   padding: 0;
   font-family: var(--main-font);
-  font-variation-settings: "wght" 300;
+  font-variation-settings: "wght" var(--post-text-weight);
   background: var(--page-bg-color);
   background-image: var(--bg-color-gradient), var(--bg-img);
   background-repeat: no-repeat;
@@ -91,9 +90,8 @@
 .post__title {
   padding: 4px 10px;
   font-family: var(--main-font);
-  font-weight: var(--post-title-weight);
   font-size: var(--main-text-size);
-  font-variation-settings: "wght" 700;
+  font-variation-settings: "wght" var(--post-title-weight);
 }
 
 .post__img {
@@ -156,10 +154,9 @@
 .post__text {
   padding-right: 16px;
   font-family: var(--main-font);
-  font-weight: var(--post-text-weight);
   font-size: var(--main-text-size);
   line-height: var(--common-line-height);
-  font-variation-settings: "wght" 500;
+  font-variation-settings: "wght" var(--post-text-weight);
 }
 
 .post__buttons {
@@ -314,18 +311,18 @@
   mix-blend-mode: difference;
 }
 
-.dialog:not([open]) {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.dialog[open] {
+.dialog {
   display: grid;
+  width: clamp(341px, 24.5138vw, 353px);
+  padding: 30px;
   grid-template-columns: 20% 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 30px;
-  width: clamp(341px, 24.5138vw, 353px);
-  padding: 30px;
+}
+
+.dialog:not([open]) {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .dialog::backdrop {
@@ -342,7 +339,7 @@
   background-color: transparent;
 }
 
-.dialog[open] .save-icon {
+.dialog .save-icon {
   align-self: center;
   width: 39px;
   height: 39px;
@@ -376,7 +373,7 @@
     width: 309px;
   }
 
-  .dialog[open] {
+  .dialog {
     padding-inline: 42px;
   }
 }
