@@ -7,7 +7,7 @@
   --stretch-container-width: clamp(375px, 100vw, 700px);
   --header-title-size: clamp(49px, 13.0667vw, 65px);
   --header-title-weight: 500;
-  --header-subtitle-size: clamp(14px, 3.7333vw ,23px);
+  --header-subtitle-size: clamp(14px, 3.7333vw, 23px);
   --post-title-weight: 700;
   --post-text-weight: 400;
   --text-modal-window: 14px;
@@ -30,13 +30,13 @@
   --border-color: #000;
   --border-btn-color: #000;
   --post-bg-color: #fff;
-  --btn-shadow-color: rgba(0,0,0);
+  --btn-shadow-color: rgba(0, 0, 0);
   --btn-inside-color: #fff;
   --btn-animation-color: #000;
   --btn-save-inline-size: clamp(306px, 91.3432vw, 339px);
   --btn-save-border-color: #000;
   --btn-save-color: #fff;
   --contour-color: #000;
-  --animation-fill-color: #FF0000;
+  --animation-fill-color: #ff0000;
   --animation-fill-color-hover: #000;
 }

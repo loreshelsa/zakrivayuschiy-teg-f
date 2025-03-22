@@ -32,13 +32,13 @@
   align-items: center;
   padding: 0;
   font-family: var(--main-font, sans-serif);
-  font-variation-settings: "wght" var(--post-text-weight);
   background: var(--page-bg-color);
   background-image: var(--bg-color-gradient), var(--bg-img);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: "wght" var(--post-text-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
@@ -60,8 +60,8 @@
 
 .header__title {
   font-family: var(--accent-font, fantasy);
-  font-size: var(--header-title-size);
   font-weight: var(--header-title-weight);
+  font-size: var(--header-title-size);
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -91,18 +91,17 @@
 
 .card__title {
   padding: 6px 10px;
-  line-height: 1;
   font-family: var(--main-font, sans-serif);
   font-size: var(--main-text-size);
+  line-height: 1;
   font-variation-settings: "wght" var(--post-title-weight);
 }
 
 .card__img {
   position: relative;
+  border-block: var(--post-border) var(--border-color);
   overflow: hidden;
   line-height: 0;
-  border-block: var(--post-border) var(--border-color);
-
 }
 
 .card__picture {
@@ -141,12 +140,12 @@
 
 .label {
   position: absolute;
-  top: clamp(23px, 6.13vw ,25px);
+  top: clamp(23px, 6.13vw, 25px);
   right: clamp(11px, 2.93vw, 25px);
   z-index: 1;
   font-family: var(--accent-font, fantasy);
-  line-height: 1;
   font-size: var(--label-text-size);
+  line-height: 1;
   text-shadow: 1px var(--label-stroke-color);
   mix-blend-mode: hard-light;
 }
@@ -215,12 +214,12 @@
 }
 
 .card__icon-button {
-  max-height: 38px;
-  min-width: 43px;
   display: inline-block;
-  padding: 1px 0 0 0;
+  min-width: 43px;
+  max-height: 38px;
   margin: 0;
   border: 2px solid transparent;
+  padding: 1px 0 0 0;
   background-color: transparent;
   transition: border 0.3s ease;
 }
@@ -319,11 +318,11 @@
 
 .dialog {
   display: grid;
-  width: clamp(341px, 24.5138vw, 353px);
-  padding: 30px;
   grid-template-columns: 20% 1fr;
   grid-template-rows: 1fr min-content;
   grid-row-gap: 30px;
+  width: clamp(341px, 24.5138vw, 353px);
+  padding: 30px;
 }
 
 .dialog:not([open]) {
@@ -342,8 +341,8 @@
   height: 38px;
   font-family: var(--accent-font, fantasy);
   font-size: var(--btn-text-size);
-  background-color: transparent;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .dialog .save-icon {
@@ -355,8 +354,8 @@
 .dialog__text {
   font-family: var(--accent-font, fantasy);
   font-size: var(--btn-text-size);
-  text-transform: uppercase;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .button__text {
@@ -371,8 +370,8 @@
 @media (width <= 375px) {
   .btn-save {
     flex-direction: column;
-    min-height: 84px;
     max-width: 310px;
+    min-height: 84px;
   }
 
   .save-icon {
@@ -385,8 +384,8 @@
   }
 
   .card__title {
-    line-height: 22px;
     padding: 3.5px 10px 4.5px;
+    line-height: 22px;
   }
 
   .card__description {
