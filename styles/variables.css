@@ -5,8 +5,9 @@
   --main-text-size: 18px;
   --common-line-height: 21px;
   --stretch-container-width: clamp(375px, 100vw, 700px);
-  --header-title-size: clamp(49px, 7.3463vh, 65px);
-  --header-subtitle-size: clamp(14px, 2.3958vh ,23px);
+  --header-title-size: clamp(49px, 13.0667vw, 65px);
+  --header-title-weight: 500;
+  --header-subtitle-size: clamp(14px, 3.7333vw ,23px);
   --post-title-weight: 700;
   --post-text-weight: 400;
   --text-modal-window: 14px;
