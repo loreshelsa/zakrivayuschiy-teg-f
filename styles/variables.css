@@ -33,7 +33,7 @@
   --btn-shadow-color: rgba(0,0,0);
   --btn-inside-color: #fff;
   --btn-animation-color: #000;
-  --btn-save-inline-size: clamp(306px, 91.3432vw, 335px);
+  --btn-save-inline-size: clamp(306px, 91.3432vw, 339px);
   --btn-save-border-color: #000;
   --btn-save-color: #fff;
   --contour-color: #000;
