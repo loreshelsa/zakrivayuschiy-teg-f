@@ -316,7 +316,7 @@
   width: clamp(341px, 24.5138vw, 353px);
   padding: 30px;
   grid-template-columns: 20% 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr min-content;
   grid-row-gap: 30px;
 }
 
@@ -345,13 +345,15 @@
   height: 39px;
 }
 
-.button__text {
+.dialog__text {
   position: relative;
   z-index: 1;
   color: var(--btn-inside-color);
   font-family: var(--accent-font);
   font-size: var(--btn-text-size);
   mix-blend-mode: difference;
+  text-transform: uppercase;
+  line-height: 1.5;
 }
 
 @media (width <= 375px) {
