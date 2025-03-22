@@ -373,10 +373,6 @@
 }
 
 @media (width <= 375px) {
-  .header__subtitle {
-    font-size: 14px;
-  }
-
   .btn-save {
     flex-direction: column;
     height: 84px;
