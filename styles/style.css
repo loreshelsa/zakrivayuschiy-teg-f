@@ -16,14 +16,6 @@
   }
 }
 
-@supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
-  .label {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--label-stroke-color);
-    text-stroke: 1px var(--label-stroke-color);
-  }
-}
-
 .page {
   display: flex;
   flex-direction: column;
@@ -409,5 +401,13 @@
 @keyframes sparkOut {
   to {
     opacity: 1;
+  }
+}
+
+@supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
+  .label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--label-stroke-color);
+    text-stroke: 1px var(--label-stroke-color);
   }
 }
